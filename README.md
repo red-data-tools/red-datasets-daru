@@ -8,6 +8,8 @@ Red Datasets Daru
 
 Red Datasets Daru provides the way to export a Red Datasets object as Daru::DataFrame object.
 
+Red Datasets Daru adds `#to_daru` method to each dataset in Red Datasets.  Using this method, you can obtain dataset as an object of `Daru::DataFrame` class, which is provided by [daru](https://github.com/sciruby/daru).
+
 ## Install
 
 ```console
