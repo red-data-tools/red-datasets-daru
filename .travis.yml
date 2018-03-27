@@ -1,5 +1,10 @@
-sudo: false
-language: ruby
-rvm:
-  - 2.5.0
-before_install: gem install bundler -v 1.16.0
+sudo: required
+
+services:
+  - docker
+
+install:
+  - docker build -t red-data-tools/red-datasets-daru .
+
+script:
+  - docker run red-data-tools/red-datasets-daru /bin/sh -c "bundle exec rake"
