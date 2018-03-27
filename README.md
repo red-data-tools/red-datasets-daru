@@ -21,7 +21,7 @@ gem install red-datasets-daru
 ## Usage
 
 ```ruby
-require "datasets/daru"
+require "datasets-daru"
 
 iris = Datasets::Iris.new
 iris_df = iris.to_daru
